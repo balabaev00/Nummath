@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e02d3257-fccf-47e3-bbfb-a8e4a1bad7e0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZeHKLkJDTtqJ5rWKS5B2NrBHdR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="Метод Трапеций" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e02d3257-fccf-47e3-bbfb-a8e4a1bad7e0" name="Default Changelist" comment="" />
+      <created>1585192574566</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585192574566</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="435" key="GridCell.Tab.0.bottom" timestamp="1585211422217">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="435" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1585211422217" />
+    <state width="1877" height="435" key="GridCell.Tab.0.center" timestamp="1585211422216">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="435" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1585211422216" />
+    <state width="1877" height="435" key="GridCell.Tab.0.left" timestamp="1585211422216">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="435" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1585211422216" />
+    <state width="1877" height="435" key="GridCell.Tab.0.right" timestamp="1585211422217">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="435" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1585211422217" />
+    <state width="1877" height="435" key="GridCell.Tab.1.bottom" timestamp="1585211422217">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="435" key="GridCell.Tab.1.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1585211422217" />
+    <state width="1877" height="435" key="GridCell.Tab.1.center" timestamp="1585211422217">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="435" key="GridCell.Tab.1.center/0.40.1920.1040@0.40.1920.1040" timestamp="1585211422217" />
+    <state width="1877" height="435" key="GridCell.Tab.1.left" timestamp="1585211422217">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="435" key="GridCell.Tab.1.left/0.40.1920.1040@0.40.1920.1040" timestamp="1585211422217" />
+    <state width="1877" height="435" key="GridCell.Tab.1.right" timestamp="1585211422217">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="435" key="GridCell.Tab.1.right/0.40.1920.1040@0.40.1920.1040" timestamp="1585211422217" />
+    <state x="666" y="189" key="refactoring.ChangeSignatureDialog" timestamp="1585199832591">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="666" y="189" key="refactoring.ChangeSignatureDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1585199832591" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Trapeze.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
