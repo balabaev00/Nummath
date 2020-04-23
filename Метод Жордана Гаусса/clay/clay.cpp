@@ -68,7 +68,7 @@ int main()
 
 
 	
-	/*float del;
+	float del;
 	del = arr[3][4];
 	arr[3][5] -= arr[4][5] * del;
 	arr[3][4] -= arr[4][4] * del;
@@ -118,7 +118,7 @@ int main()
 	arr[0][4] -= arr[1][4] * del;
 	arr[0][3] -= arr[1][3] * del;
 	arr[0][2] -= arr[1][2] * del;
-	arr[0][1] -= arr[1][1] * del;*/
+	arr[0][1] -= arr[1][1] * del;
 	
 	
 	x[n - 1] = arr[n - 1][n] / arr[n - 1][n - 1];
@@ -131,6 +131,9 @@ int main()
 		}
 		x[i] = (arr[i][n] - buf) / arr[i][i];
 	}
+
+	cout << "			Промежуточный вывод матрицы №2" << endl;
+	print_arr(arr, n);
 
 		
 
