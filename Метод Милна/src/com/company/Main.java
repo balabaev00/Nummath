@@ -9,7 +9,8 @@ public class Main {
     private static double eps = 0.0001;
 
     private static double f(double x, double y) {
-        return (8*x*x-1)*Math.cos(y);
+        //return (8*x*x-1)*Math.cos(y);
+        return (x*x+1)*Math.sin(y);
     }
 
     private static double[] zeros(int n) {
@@ -62,7 +63,7 @@ public class Main {
             ypr[k] = y[k-4] + (4*h) / 3*( 2*f(x[k-3],y[k-3] )-f( x[k-2],y[k-2] )+2*f( x[k-1],y[k-1] ));
             ykor[k] = y[k-2] + (h/3)*(f(x[k-2],y[k-2] )+4*f(x[k-1],y[k-1] )+ f(x[k], ypr[k] ));
             e = Math.abs(ykor[k] - ypr[k]) / 29;
-            if (e > eps)
+            if (e < eps)
                 y[k] = ykor[k];
             else
                 y[k] = ypr[k];
