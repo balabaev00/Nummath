@@ -9,7 +9,6 @@ public class Main {
     private static double eps = 0.0001;
 
     private static double f(double x, double y) {
-        //return (8*x*x-1)*Math.cos(y);
         return (x*x+1)*Math.sin(y);
     }
 
@@ -40,34 +39,44 @@ public class Main {
     public static void main(String[] args) {
         double[] x;
         double[] y;
-        double[] ypr;
-        double[] ykor;
-        double a,b,c,d;
+        double a;
+        double b;
+        double c;
+        double d;
+        double y1;
+        double y2;
         double e;
+        while (true) {
+            x = generateArray(n+1,h);
+            y = zeros(n+1);
+            y[0]=1;
 
-        x = generateArray(n + 1, h);
-        y = zeros(n + 1);
-        ypr = zeros(n + 1);
-        ykor = zeros(n + 1);
-        y[0] = 1;
+            for (int k = 0; k < 4; k++) {
+                a = h*f(x[k],y[k]);
+                b = h*f(x[k]+h/2,y[k]+a/2);
+                c = h*f(x[k]+h/2,y[k]+b/2);
+                d = h*f(x[k]+h,y[k]+c);
+                y[k+1]=y[k]+(a+2*b+2*c+d)/6;
+            }
 
-        for (int k = 0; k < 4; k++) {
-            a = h * f(x[k], y[k]);
-            b = h * f(x[k] + h / 2, y[k] + a / 2);
-            c = h * f(x[k] + h / 2, y[k] + b / 2);
-            d = h * f(x[k] + h, y[k] + c);
-            y[k + 1] = y[k] + (a + 2 * b + 2 * c + d) / 6;
+            for (int k = 4; k < n+1; k++) {
+                y1 = y[k-4] + (4*h) / 3*( 2*f(x[k-3],y[k-3] )-f( x[k-2],y[k-2] )+2*f( x[k-1],y[k-1] ));
+                y2 = y[k-2] + (h/3)*(f(x[k-2],y[k-2] )+4*f(x[k-1],y[k-1] )+ f(x[k], y1 ));
+                e = Math.abs(y2-y1)/29;
+                if(e<eps) {
+                    y[k]=y2;
+                }
+                else {
+                    h/=2;
+                    n*=2;
+                    break;
+                }
+                if(k==n) {
+                    printArray(y, n+1);
+                    return;
+                }
+            }
+
         }
-
-        for (int k = 4; k < n + 1; k++) {
-            ypr[k] = y[k-4] + (4*h) / 3*( 2*f(x[k-3],y[k-3] )-f( x[k-2],y[k-2] )+2*f( x[k-1],y[k-1] ));
-            ykor[k] = y[k-2] + (h/3)*(f(x[k-2],y[k-2] )+4*f(x[k-1],y[k-1] )+ f(x[k], ypr[k] ));
-            e = Math.abs(ykor[k] - ypr[k]) / 29;
-            if (e < eps)
-                y[k] = ykor[k];
-            else
-                y[k] = ypr[k];
-        }
-        printArray(y,n+1);
     }
 }
