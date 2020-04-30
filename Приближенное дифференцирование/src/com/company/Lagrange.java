@@ -1,0 +1,60 @@
+package com.company;
+
+public class Lagrange {
+    private double[] X;
+    private double[] Y;
+    private double x;
+    private int n;
+
+    public Lagrange(double[] x, double[] y, double x1, int n) {
+        X = x;
+        Y = y;
+        this.x = x1;
+        this.n = n;
+    }
+
+    public double[] getX() {
+        return X;
+    }
+
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    public int getN() {
+        return n;
+    }
+
+    public void setN(int n) {
+        this.n = n;
+    }
+
+    public void setX(double[] x) {
+        X = x;
+    }
+
+    public double[] getY() {
+        return Y;
+    }
+
+    public void setY(double[] y) {
+        Y = y;
+    }
+
+    public double method() {
+        double lagPol = 0;
+        for (int k = 0; k < n; k++) {
+            double numer = 1;
+            double denom = 1;
+            for (int i = 0; i < n; i++) {
+                if(i!=k) {
+                    numer*=x-X[i];
+                    denom*=X[k]-X[i];
+                }
+            }
+            lagPol+=Y[k]*numer/denom;
+        }
+        return lagPol;
+    }
+
+}
