@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Метод Милна:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/__jar</output-path>
+    <root id="archive" name="Метод Милна.jar">
+      <element id="module-output" name="Метод Милна" />
+    </root>
+  </artifact>
+</component>
