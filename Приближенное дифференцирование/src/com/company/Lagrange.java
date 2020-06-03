@@ -42,19 +42,36 @@ public class Lagrange {
     }
 
     public double method() {
-        double lagPol = 0;
-        for (int k = 0; k < n; k++) {
-            double numer = 1;
-            double denom = 1;
-            for (int i = 0; i < n; i++) {
-                if(i!=k) {
-                    numer*=x-X[i];
-                    denom*=X[k]-X[i];
-                }
+        double y = 0,
+                mul1 = 1,
+                mul2 = 1,
+                sum = 0;
+        for (int k = 0; k < n; k++)
+        {
+            mul1 = 1;
+            for (int j = 0; j < n; j++)
+            {
+                if (k == j) continue;
+                mul1 *= (X[k] - X[j]);
             }
-            lagPol+=Y[k]*numer/denom;
+
+            sum = 0;
+            for (int m = 0; m < n; m++)
+            {
+                if (k == m) continue;
+
+                mul2 = 1;
+                for (int i = 0; i < n; i++)
+                {
+                    if (i == m || i == k) continue;
+                    mul2 *= (x - X[i]);
+                }
+                sum += mul2;
+            }
+
+            y += (Y[k] * (sum / mul1));
         }
-        return lagPol;
+        return y;
     }
 
 }
